@@ -1,26 +1,3 @@
-/*
- * This file compiles an abstract syntax tree (AST) into Python bytecode.
- *
- * The primary entry point is _PyAST_Compile(), which returns a
- * PyCodeObject.  The compiler makes several passes to build the code
- * object:
- *   1. Checks for future statements.  See future.c
- *   2. Builds a symbol table.  See symtable.c.
- *   3. Generate an instruction sequence. See compiler_mod() in this file.
- *   4. Generate a control flow graph and run optimizations on it.  See flowgraph.c.
- *   5. Assemble the basic blocks into final code.  See optimize_and_assemble() in
- *      this file, and assembler.c.
- *
- * Note that compiler_mod() suggests module, but the module ast type
- * (mod_ty) has cases for expressions and interactive statements.
- *
- * CAUTION: The VISIT_* macros abort the current function when they
- * encounter a problem. So don't invoke them when there is memory
- * which needs to be released. Code blocks are OK, as the compiler
- * structure takes care of releasing those.  Use the arena to manage
- * objects.
- */
-
 #include <stdbool.h>
 
 #include "Python.h"
