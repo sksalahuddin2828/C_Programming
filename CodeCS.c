@@ -1,12 +1,3 @@
-/* ------------------------------------------------------------------------
-
-   Python Codec Registry and support functions
-
-Written by Marc-Andre Lemburg (mal@lemburg.com).
-
-Copyright (c) Corporation for National Research Initiatives.
-
-   ------------------------------------------------------------------------ */
 
 #include "Python.h"
 #include "pycore_call.h"          // _PyObject_CallNoArgs()
