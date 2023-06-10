@@ -1,23 +1,4 @@
 /****************************************************************
- *
- * The author of this software is .
- *
- * Copyright (c) 1991, 2000, 2001 by Lucent Technologies.
- *
- * Permission to use, copy, modify, and distribute this software for any
- * purpose without fee is hereby granted, provided that this entire notice
- * is included in all copies of any software which is or includes a copy
- * or modification of this software and in all copies of the supporting
- * documentation for such software.
- *
- * THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED
- * WARRANTY.  IN PARTICULAR, NEITHER THE AUTHOR NOR LUCENT MAKES ANY
- * REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY
- * OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
- *
- ***************************************************************/
-
-/****************************************************************
  * This is dtoa.c by David M. Gay, downloaded from
  * http://www.netlib.org/fp/dtoa.c on April 15, 2009 and modified for
  * inclusion into the Python core by Mark E. T. Dickinson and Eric V. Smith.
